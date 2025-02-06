@@ -1,0 +1,96 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.location {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.weather-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.refresh-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.refresh-button:hover {
+  background-color: #2980b9;
+}
+.inputbox {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputbox input {
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputbox input:focus {
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Blue glow effect */
+}
+
+.inputbox input::placeholder {
+  color: #aaa; /* Light grey placeholder text */
+  font-style: italic;
+}
+
+.inputbox input:focus::placeholder {
+  color: #3498db; /* Blue placeholder text on focus */
+}
